@@ -1,0 +1,30 @@
+{
+  "name": "navi_home_api",
+  "version": "1.0.0",
+  "description": "API for NaviHome company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitalyGitDev/navi_home.git"
+  },
+  "keywords": [
+    "navi",
+    "home"
+  ],
+  "author": "Vitaliy Klepka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitalyGitDev/navi_home/issues"
+  },
+  "homepage": "https://github.com/VitalyGitDev/navi_home#readme",
+  "devDependencies": {
+    "fastify": "^2.6.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "mongoose": "^5.6.7"
+  }
+}

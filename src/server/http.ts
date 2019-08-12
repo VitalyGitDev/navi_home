@@ -1,10 +1,6 @@
-const fastify = require('fastify')({ logger:true })
-    // { FastifyReply, Middleware, Plugin, RegisterOptions }
-// import http from 'http'
+import HttpServer from "../common/classes/server/httpServer";
 
 export async function startHttp() {
-    fastify.listen(process.env.APP_PORT, (err: any, address: any) => {
-        if (err) throw err
-        fastify.log.info(`server listening on ${address}`)
-    })
+    const httpContext = new HttpServer()
+    await httpContext.run(parseInt(process.env.APP_PORT!, 10), process.env.APP_DOMAIN!)
 }
